@@ -3,7 +3,7 @@
 
 function scan(ps, msg, src) {
     // first lets set up some details incase we find an email, these will populate the alert later
-    var alertRisk = 2
+    var alertRisk = 1
     var alertReliability = 3
     var alertTitle = 'Formfinder (script)'
     var alertDesc = 'Forms were found'

@@ -2,7 +2,6 @@
 
 
 function scan(ps, msg, src) {
-    // first lets set up some details incase we find an email, these will populate the alert later
     var alertRisk = 1
     var alertReliability = 3
     var alertTitle = 'Formfinder (script)'
@@ -12,7 +11,7 @@ function scan(ps, msg, src) {
     var wascId = 0
 
 	//regex
-    var re = /<(form|input)>|([Mm]ethod)="(...|....|.....|......)"|(action)="/g
+    var re = /<([fF]orm|[iI]nput)>|([mM]ethod)="(...|....|.....|......)"|(action)="/g
 
 	// we need to set the url variable to the request or we cant track the alert later
     var url = msg.getRequestHeader().getURI().toString();

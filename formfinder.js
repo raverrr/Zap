@@ -11,7 +11,7 @@ function scan(ps, msg, src) {
     var wascId = 0
 
 	//regex
-    var re = /<([fF]orm|[iI]nput)>|([mM]ethod)="(...|....|.....|......)"|(action)="/g
+    var re = /<([fF]orm|[iI]nput)>|([mM]ethod)="(...|....|.....|......)"|="([Ss]ubmit)"/g
 
 	// we need to set the url variable to the request or we cant track the alert later
     var url = msg.getRequestHeader().getURI().toString();
